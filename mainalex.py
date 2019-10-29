@@ -11,7 +11,7 @@ import torch.optim
 import torch.utils.data
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
-import alexnet6viewmax
+import alexnet12viewmax
 from transforms import *
 from dataset6view import MVDataSet
 
@@ -83,7 +83,7 @@ def main():
        print("error. dataset is not supported")
 
 
-    model = alexnet6viewmax.alexnet(pretrained = True, num_classes = nclass)
+    model = alexnet12viewmax.alexnet(pretrained = True, num_classes = nclass)
     suffix = 'jpg'
 
     # Check the save_dir exists or not
